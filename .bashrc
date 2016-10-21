@@ -1,11 +1,13 @@
+set brew_prefix=$(brew --prefix)
+
 # Source bash_prompt
-if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
-  . $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+if [ -f $brew_prefix/etc/bash_completion.d/git-prompt.sh ]; then
+  . $brew_prefix/etc/bash_completion.d/git-prompt.sh
 fi
 
 # Source bash_completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f $brew_prefix/etc/bash_completion ]; then
+  . $brew_prefix/etc/bash_completion
 fi
 
 # Setting alias
