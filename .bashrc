@@ -1,4 +1,4 @@
-set brew_prefix=$(brew --prefix)
+brew_prefix=$(brew --prefix)
 
 # Source bash_prompt
 if [ -f $brew_prefix/etc/bash_completion.d/git-prompt.sh ]; then
