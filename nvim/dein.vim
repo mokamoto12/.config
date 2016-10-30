@@ -1,5 +1,4 @@
-let s:cache_home = empty($XDG_CACHE_HOME) ? expand('$HOME/.cache') : $XDG_CACHE_HOME
-let s:dein_dir = s:cache_home . '/dein'
+let s:dein_dir = $XDG_CACHE_HOME . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if !isdirectory(s:dein_repo_dir)
