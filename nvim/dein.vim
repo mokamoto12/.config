@@ -7,16 +7,17 @@ endif
 execute 'set runtimepath^=' . s:dein_repo_dir
 
 
-let s:toml      = '~/.config/dein/plugins.toml'
-let s:lazy_toml = '~/.config/dein/plugins_lazy.toml'
+let s:toml      = $XDG_CONFIG_HOME . '/nvim/dein/plugins.toml'
+let s:lazy_toml = $XDG_CONFIG_HOME . '/nvim/dein/plugins_lazy.toml'
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
-  "call dein#load_toml(s:toml, {'lazy': 0})
-  "call dein#load_toml(s:lazy_toml, {'lazy': 1})
-  call dein#add('frankier/neovim-colors-solarized-truecolor-only')
-  call dein#add('w0ng/vim-hybrid')
-  call dein#add('Shougo/deoplete.nvim')
+  call dein#load_toml(s:toml, {'lazy': 0})
+  call dein#load_toml(s:lazy_toml, {'lazy': 1})
+"  call dein#add('Shougo/dein.vim')
+"  call dein#add('frankier/neovim-colors-solarized-truecolor-only')
+"  call dein#add('w0ng/vim-hybrid')
+"  call dein#add('Shougo/deoplete.nvim')
   call dein#end()
   call dein#save_state()
 endif
