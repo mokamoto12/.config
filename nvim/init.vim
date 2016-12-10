@@ -8,7 +8,9 @@ set smartcase
 
 filetype plugin on
 
-command D vert diffs #1
+if has("gui_vimr")
+  source ~/.config/nvim/vimr.vim
+endif
 
 let s:dein_dir = $XDG_CACHE_HOME . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
