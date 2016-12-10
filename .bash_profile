@@ -32,11 +32,6 @@ fi
 export HISTFILESIZE=2000
 export HISTSIZE=2000
 export HISTFILE=${XDG_DATA_HOME}/bash/history
-if [ ! -d ${XDG_DATA_HOME}/bash ]
-then
-  mkdir ${XDG_DATA_HOME}/bash
-fi
-
 
 # Setting npm
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
