@@ -22,6 +22,10 @@ export PATH=${JAVA_HOME}/bin:$PATH
 # Setting less
 export LESSHISTFILE=$XDG_CACHE_HOME/less/history
 export LESSKEY=$XDG_CONFIG_HOME/less/lesskey
+if [ ! -d ${XDG_CACHE_HOME}/less ]
+then
+  mkdir ${XDG_CACHE_HOME}/less
+fi
 
 # Setting bash_history
 export HISTFILESIZE=2000
