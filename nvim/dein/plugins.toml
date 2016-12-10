@@ -1,5 +1,10 @@
 [[plugins]]
-repo = 'Shougo/dein.vim'
+repo     = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'w0ng/vim-hybrid'
+repo     = 'w0ng/vim-hybrid'
+hook_add = '''
+  set termguicolors
+  set background=dark
+  colorscheme hybrid
+'''

@@ -1,7 +1,13 @@
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-on_i = 1
+repo     = 'Shougo/deoplete.nvim'
+on_i     = 1
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+
+  let g:deoplete#source = {}
+  let g:deoplete#source.php = ['file', 'buffer', 'dictionary']
+'''
 
 [[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['html', 'css']
+repo     = 'mattn/emmet-vim'
+on_ft    = ['html', 'css']
