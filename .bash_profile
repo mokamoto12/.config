@@ -37,4 +37,11 @@ then
   mkdir ${XDG_DATA_HOME}/bash
 fi
 
+
+# Setting npm
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+
+# Setting node
+export NODE_REPL_HISTORY=$XDG_DATA_HOME/node/history
+
 export PATH="${HOME}/bin:/usr/local/php5/bin:/usr/local/sbin:$PATH"
