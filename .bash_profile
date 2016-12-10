@@ -13,6 +13,7 @@ export XDG_CONFIG_DIRS=/etc/xdg
 # Setting prompt
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
 export PS1='\[\033[32m\]\h:\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\[\033[32m\]\$\[\033[00m\] '
 
 # Setting java
