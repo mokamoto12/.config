@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	name = mokamoto12
+	email = okamoto_masahiro@aratana.jp
+[merge]
+	ff = false
+[pull]
+	ff = only
