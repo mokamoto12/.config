@@ -21,8 +21,8 @@ endif
 execute 'set runtimepath^=' . s:dein_repo_dir
 
 
-let s:toml      = $XDG_CONFIG_HOME . '/nvim/dein/plugins.toml'
-let s:lazy_toml = $XDG_CONFIG_HOME . '/nvim/dein/plugins_lazy.toml'
+let s:toml      = $XDG_CONFIG_HOME . '/nvim/plugins.toml'
+let s:lazy_toml = $XDG_CONFIG_HOME . '/nvim/plugins_lazy.toml'
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
