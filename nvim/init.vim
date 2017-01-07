@@ -5,6 +5,7 @@ set list
 set wildmenu
 set ignorecase
 set smartcase
+set clipboard+=unnamedplus
 
 filetype plugin on
 
