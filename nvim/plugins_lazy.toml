@@ -3,9 +3,19 @@ repo     = 'Shougo/deoplete.nvim'
 on_i     = 1
 hook_add = '''
   let g:deoplete#enable_at_startup = 1
+  let g:deoplete#auto_complete_delay = 0
+  let g:deoplete#auto_complete_start_length = 1
 
   let g:deoplete#source = {}
   let g:deoplete#source.php = ['file', 'buffer', 'dictionary']
+  inoremap <silent><expr><CR>     pumvisible() ? deoplete#mappings#close_popup() : "\<CR>"
+  inoremap <silent><expr><Tab>    pumvisible() ? "\<C-n>".deoplete#mappings#close_popup() : "\<Tab>"
+  inoremap <silent><expr><BS>     pumvisible() ? deoplete#mappings#refresh()."\<BS>" : "\<BS>"
+  inoremap <silent><expr><Up>     pumvisible() ? "\<C-p>"  : "\<Up>"
+inoremap <silent><expr><Down>   pumvisible() ? "\<C-n>"  : "\<Down>"
+  inoremap <silent><expr><C-Up>   pumvisible() ? deoplete#mappings#cancel_popup()."\<Up>" : "\<C-Up>"
+  inoremap <silent><expr><C-Down> pumvisible() ? deoplete#mappings#cancel_popup()."\<Down>" : "\<C-Down>"
+
 '''
 
 [[plugins]]
