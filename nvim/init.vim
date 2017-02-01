@@ -6,6 +6,7 @@ set wildmenu
 set ignorecase
 set smartcase
 set clipboard+=unnamedplus
+set expandtab
 
 filetype plugin on
 
