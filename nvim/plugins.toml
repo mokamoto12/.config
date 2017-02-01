@@ -8,3 +8,12 @@ hook_add = '''
   set background=dark
   colorscheme hybrid
 '''
+
+[[plugins]]
+repo     = 'frankier/neovim-colors-solarized-truecolor-only'
+hook_add = '''
+  set termguicolors
+  set background=light
+  colorscheme solarized
+'''
+if       = 0
