@@ -10,6 +10,10 @@ if [ -f $brew_prefix/etc/bash_completion ]; then
   . $brew_prefix/etc/bash_completion
 fi
 
+if [ -f $XDG_CONFIG_HOME/bash/alias ]; then
+  . $XDG_CONFIG_HOME/bash/alias
+fi
+
 # Setting alias
 alias vi='nvim'
 alias cp='cp -i'
