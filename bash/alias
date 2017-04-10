@@ -36,6 +36,9 @@ __git_complete gpl _git_pull
 alias gr='git reset'
 __git_complete gr _git_reset
 
+alias gps='git push'
+__git_complete gps _git_push
+
 alias phs='phpstorm'
 alias pst='phpstorm'
 alias v='nvim'
