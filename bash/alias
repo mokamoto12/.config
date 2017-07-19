@@ -39,7 +39,12 @@ __git_complete gr _git_reset
 alias gps='git push'
 __git_complete gps _git_push
 
+alias gls='git log --stat'
+__git_complete gls _git_log
+
 alias phs='phpstorm'
 alias pst='phpstorm'
 alias v='nvim'
 alias vd='nvim -d'
+
+# ex: ft=sh:
