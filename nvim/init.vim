@@ -8,7 +8,7 @@ set smartcase
 set clipboard+=unnamedplus
 set expandtab
 
-filetype plugin on
+filetype plugin indent on
 
 if has("gui_vimr")
   source ~/.config/nvim/vimr.vim
