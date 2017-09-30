@@ -3,6 +3,7 @@ set cursorline
 set incsearch
 set list
 set wildmenu
+set wildmode=longest:full
 set ignorecase
 set smartcase
 set clipboard+=unnamedplus
