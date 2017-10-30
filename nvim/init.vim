@@ -7,6 +7,8 @@ set wildmode=longest:full
 set ignorecase
 set smartcase
 set clipboard+=unnamedplus
+set splitbelow
+set splitright
 set expandtab
 
 filetype plugin indent on

@@ -17,3 +17,6 @@ hook_add = '''
   colorscheme solarized
 '''
 if       = 0
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
