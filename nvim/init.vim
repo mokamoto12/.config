@@ -11,6 +11,8 @@ set splitbelow
 set splitright
 set expandtab
 
+let mapleader = "\<Space>"
+
 filetype plugin indent on
 
 if has("gui_vimr")
