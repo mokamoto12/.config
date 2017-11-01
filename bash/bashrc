@@ -13,16 +13,3 @@ fi
 if [ -f $XDG_CONFIG_HOME/bash/alias ]; then
   . $XDG_CONFIG_HOME/bash/alias
 fi
-
-# Setting alias
-alias vi='nvim'
-alias cp='cp -i'
-alias ls='ls -G'
-alias ll='ls -l'
-alias la='ls -al'
-alias gst='git status'
-alias mv='mv -i'
-alias giff='git diff'
-alias gitst='git status'
-alias gimmit='git commit'
-
