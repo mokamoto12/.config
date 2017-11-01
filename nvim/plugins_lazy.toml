@@ -8,10 +8,6 @@ hook_add = '''
 
   let g:deoplete#sources = {}
   let g:deoplete#sources.php = ['file', 'buffer', 'dictionary']
-
-  inoremap <silent><expr><CR>   pumvisible() ? deoplete#close_popup() : "\<CR>"
-  inoremap <silent><expr><Up>   pumvisible() ? "\<C-p>"  : "\<Up>"
-  inoremap <silent><expr><Down> pumvisible() ? "\<C-n>"  : "\<Down>"
 '''
 
 [[plugins]]
